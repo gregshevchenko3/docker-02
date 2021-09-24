@@ -1,0 +1,12 @@
+version: '3'
+services: 
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    environment:
+      - NGINX_CONFIG=/workspace/nginx.conf
+    volumes:
+      - ..:/workspace:cached
+      - ../nginx.conf:/etc/nginx/sites-available/default

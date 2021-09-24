@@ -1,0 +1,13 @@
+{
+  "name": "nginx-php",
+  "dockerComposeFile": "docker-compose.yml",
+	"service": "nginx",
+	"workspaceFolder": "/workspace",
+  "extensions": [
+    "bmewburn.vscode-intelephense-client",
+    "shanoor.vscode-nginx"
+  ],
+  "overrideCommand": false,
+  "forwardPorts": [80],
+  "remoteUser": "vscode",
+}
